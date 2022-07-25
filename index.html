@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="module" src="index.js"></script>
+</head>
+<body>
+	<div id="input-bar" class="input-bar">
+		<div class="param-container">
+			<label for="array-generation">Array Generation Method</label>
+			<select name="" id="array-generation" class="to-disable">
+				<option value="random-order-values">Random values and order</option>
+				<option value="random-order-all-values">Random order all values</option>
+			</select>
+		</div>
+		<div class="param-container">
+			<label for="array-size">Array size</label>
+			<input type="number" id="array-size" class="to-disable" min="0" max="1000" step="10" value="100">
+		</div>
+		<button id="generate-array" class="to-disable">Generate Array !</button>
+		<div class="param-container">
+			<label for="sorting-algorithm">Sorting algorithm</label>
+			<select name="" id="sorting-algorithm">
+				<option value="selection-sort">Selection sort</option>
+				<option value="bubble-sort">Bubble sort</option>
+				<option value="insertion-sort">Insertion sort</option>
+				<option value="merge-sort">Merge sort</option>
+				<option value="quick-sort">Quick sort</option>
+				<option value="heap-sort">Heap sort</option>
+			</select>
+		</div>
+		<button id="sort" class="to-disable">Sort !</button>
+		<button id="stop" class="to-enable" disabled>Stop !</button>
+	</div>
+	<main id="array-wrapper" class="array-wrapper">
+		<div id="array-container" class="array-container">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+		</div>
+	</main>
+</body>
+</html>
